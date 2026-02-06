@@ -45,3 +45,34 @@ let myFunction = function(){
     
     /* basically funtction ka typeof me return object funtio milta h 
     or sbhi non primitive ka type of function milta h */
+
+    // Stack (Primitive) , Heap(Non-prmimitive)
+
+    let MyName = "aman"
+
+
+    let anotherName = MyName
+    anotherName = "akash"   // kynki stack me copy pass hoti h isliye value change ho skti h
+
+    console.log(MyName);
+    console.log(anotherName);
+
+    let userOne = {
+      name: "raj",
+      email : "raj123@gmail,com"
+    }
+
+    let userTwo = userOne;
+         userTwo.email = "rajiya@345gmail.com" // heap reference leta h isliye value hange ho jayegi dono jagah
+
+
+    console.log(userOne);
+    console.log(userTwo);
+    
+
+  console.log(userOne.email);
+  console.log(userTwo.email);
+  
+    
+    
+    
