@@ -18,4 +18,5 @@ console.log(undefined < 0);
 
 // === 
 
-console.log("2" === 2);
+console.log("2" === 2); // ye value or type dono check karta h
+console.log("2" == 2); // ye type ko ignore karta h only value check krta h 
