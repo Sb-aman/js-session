@@ -14,8 +14,9 @@ const id = Symbol("123")
 const anotherId = Symbol("123")
 
 console.log(id === anotherId);   // ye false hi dega
+/* iska reason h ki symbol unique id deta h */
 
-const bigNumber  = 12344667889956677n  // n means bog number ban jayega
+const bigNumber  = 12344667889956677n  // n means big number ban jayega
 
 // Reference (non primitive)
 
@@ -43,7 +44,7 @@ let myFunction = function(){
     console.log(typeof heros);
     
     
-    /* basically funtction ka typeof me return object funtio milta h 
+    /* basically function ka typeof me return object funtion milta h 
     or sbhi non primitive ka type of function milta h */
 
     // Stack (Primitive) , Heap(Non-prmimitive)
@@ -63,7 +64,7 @@ let myFunction = function(){
     }
 
     let userTwo = userOne;
-         userTwo.email = "rajiya@345gmail.com" // heap reference leta h isliye value hange ho jayegi dono jagah
+         userTwo.email = "rajiya@345gmail.com" // heap reference leta h isliye value change ho jayegi dono jagah
 
 
     console.log(userOne);

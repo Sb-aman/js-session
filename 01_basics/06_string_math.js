@@ -84,7 +84,7 @@ let newScore = new  Number(score)
 // console.log(score.toString().length);  // to apan toString method se number ko string bana lenge
 
 
-const nujmbering = 56724.1234  // ye value ko rounf off kar deta h 
+const nujmbering = 56724.1234  // ye value ko round off kar deta h 
 // console.log(nujmbering.toPrecision(2));
 // console.log(nujmbering.toPrecision(1));
 // console.log(nujmbering.toPrecision(3));

@@ -121,7 +121,7 @@ const obc4 = { 5: "a", 6: "b" }
 
 
 
-const obj3 = { ...obj1, ...obj2 }  // ye apna method  bhi merge karne ke liye
+const obj3 = { ...obj1, ...obj2 }  // ye apna spread method  bhi merge karne ke liye
 // console.log(obj3);
 
 
@@ -145,7 +145,7 @@ users[1].email
 
 // console.log(Object.keys(tinderUser));  --> means jo heading h wi dega array ke form me
 // console.log(Object.values(tinderUser));  --> means jo values h wo dega array ke form me
-// console.log(Object.entries(tinderUser));   ---> ye bhi same kam karta h 
+// console.log(Object.entries(tinderUser));   ---> isme sbki value array ke andar aa jayegi
 
 // console.log(tinderUser.hasOwnProperty('isLoggedIn'));  --> simply agar ye property mil gayi to true else false
 

@@ -13,7 +13,7 @@
 
 
 // let myCreatedDate = new Date(2023,0,13,5,34)
-// console.log(myCreatedDate.toDateString());   // js me 0 yani january hota h
+// console.log(myCreatedDate.toDateString());   // js me 0 means january hota h
 // console.log(myCreatedDate.toLocaleString());
 
 
@@ -32,12 +32,13 @@ let myTimeStamp = Date.now()
 
 let newDate = new Date()
 // console.log(newDate);
-// console.log(newDate.getMonth() + 1);
+console.log(newDate.getMonth() + 1);
+
 // console.log(newDate.getDay());
 
 // `${newDate.getDay()} and the time `
 
-newDate.toLocaleString('default', {  // isse apan apne forma me de skte h values ko 
+newDate.toLocaleString('default', {  // isse apan apne format me de skte h values ko 
     weekday: "long",
     
 })
