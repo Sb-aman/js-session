@@ -52,3 +52,4 @@ let score3 = 300
 console.log(Array.of(score1, score2, score3)); // ye method number ko array ke form me banane ke lye h 
 
 // console.log(Array.of("aman" ,"nanamn","akash" ,"raj"));
+
