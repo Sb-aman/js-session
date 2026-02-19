@@ -23,6 +23,7 @@ const newString = gameName.substring(0, 4)  // substring me negative value nhi l
 console.log(newString);
 
 const anotherString = gameName.slice(-8, 4) // yha -ve value chl jyegi 
+              // agar negative h to automatic length se minus kar deta h compiler last excluded hota h
 console.log(anotherString);
 
 const newStringOne = "   hitesh    "
@@ -114,7 +115,7 @@ console.log(Math);
 // console.log(Math.max(4, 3, 6, 8));
 
 console.log(Math.random());  // isme sirf 0 to 0.9 tk hi value aati h 
-console.log((Math.random()*10) + 1);  // isme *10 kiya h to ek digit shift hi jayegi usme +1 kiya to 1. somthing aayega
+console.log((Math.random()*10) + 1);  // isme *10 kiya h to ek digit shift ho jayegi usme +1 kiya to 1. somthing aayega
 console.log(Math.floor(Math.random()*10) + 1); // ab isme floor le liya to lowest value aayegi
 
 const min = 10
