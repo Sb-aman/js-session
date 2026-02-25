@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur code | DOM</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+    function addLanguage(langName){
+        const li = document.createElement('li');
+        li.innerHTML = `${langName}`// ye html element ke adar (text + tags) ko get ya set karne ke liye use hota h 
+        document.querySelector('.language').appendChild(li)
+    }
+    addLanguage("python")
+    addLanguage("typescript")
+
+
+function addanotherLangugage(langName2){
+    const li = document.createElement('li');
+li.innerHTML = `${langName2}`
+document.querySelector('.language').appendChild(li)
+}
+addanotherLangugage("java")
+addanotherLangugage("ruby")
+
+function addLanguage3(newEditing){
+const ul = document.createElement('ul')
+ul.innerHTML = `${newEditing}`
+document.querySelector(".language").appendChild(ul)
+}addanotherLangugage("flask")
+addanotherLangugage("golang")
+
+// ye optimise tarika h 
+function addOptimise(langName){ // function scoped h to baha access nhi hoge to error ka chance nhi h 
+ const  li = document.createElement('li')
+li.appendChild(document.createTextNode(langName))
+document.querySelector('.language').appendChild(li)
+}
+addOptimise("cpp")
+addOptimise("C")
+
+
+//edit
+const secondLang = document.querySelector("li:nth-child(2)")
+secondLang.innerHTML = "mojo" // isse bhi changr kar skte h 
+const newli = document.createElement('li')
+newli.textContent = "Mojo"
+// secondLang.replaceWith(newli) // ye secondLang me jo query h usme replace kar dega
+
+
+//edit
+const firstLang = document.querySelector("li:first-child")
+firstLang.outerHTML = '<li>TypeScript</li>' 
+
+//remove
+const  lastLang = document.querySelector('li:last-child')
+lastLang.remove();
+</script>
+</html>
