@@ -57,8 +57,12 @@ newli.textContent = "Mojo"
 
 //edit
 const firstLang = document.querySelector("li:first-child")
-firstLang.outerHTML = '<li>TypeScript</li>' 
+firstLang.outerHTML = '<li>TypeScript</li>' // outerhtml ka use pura content + element ko change karneke liye hota h 
 
+    /*box.innerHTML = "<h1>H1</h1>" --> to isme div same rhega andar ka content change ho jayega
+    box.outeHTML = "<section>H1</section>" --> isme pura div replace ho jayega */
+
+    
 //remove
 const  lastLang = document.querySelector('li:last-child')
 lastLang.remove();
