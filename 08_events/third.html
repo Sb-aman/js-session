@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Beauty and the Beast</h1>
+    <button id="start"> start</button>
+    <button id="stop"> stop</button>
+
+    <script>
+      /*   const starting =  setInterval( function() {
+            console.log("aman" , Date.now());
+        } , 2000);
+
+        const sayDate = function (str) {
+            console.log(str, Date.now());
+        }
+
+        const stop = starting(sayDate, 1000, "hello");
+
+        ab is setinteval ko bhi stop karne ke liye bhi method h 
+        clearInterval(stop);
+        */
+
+
+
+// Q. when we press start then start and press stop then stop 
+        document.querySelector('#start').addEventListener('click', function () {
+           
+   starting =  setInterval( function() {
+            console.log("aman" , Date.now());
+        } ,1000);
+        console.log("started")
+
+        }, 1000);
+
+        document.querySelector('#stop').addEventListener('click', function () {
+           
+        clearInterval(starting);
+        console.log("stopped")
+        }, 1000);
+    </script>
+</body>
+
+</html>

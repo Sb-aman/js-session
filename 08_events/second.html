@@ -1,0 +1,47 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Monkey and King</h1>
+    <button id="stop"> stop</button>
+
+    <script>
+
+        setTimeout(() => {
+            console.log("Aman")
+            
+        }, 2000);
+
+        // another declaration
+     /*   const sayAman = function(){
+            console.log("Aman")
+        }
+        setTimeout((sayAman),2000);
+        */
+
+        // document.querySelector('h1').innerHTML = "aman shukla"  // ab ise 2sec bad print karna h 
+
+        const changeText =       function(){document.querySelector('h1').innerHTML = "aman shukla"
+    }
+//    setTimeout(changeText , 2000);
+
+// ab is time out ko remove karne ke liye ek method h 
+
+const changeMe =  setTimeout(changeText , 4000);
+
+// clearTimeout(changeMe) ->jo  change kiye h use remove  karne ke liye iska use . isme reference pass krte h 
+
+
+// to me ise ek event me pass kara deta hu 
+ document.querySelector('#stop').addEventListener('click' , function(){
+clearTimeout(changeMe)
+console.log("Stopped")
+}) // isse me stop press kar dunga to wo ruk jayega change nhi hoga 
+
+    </script>
+</body>
+</html>
