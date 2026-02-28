@@ -17,11 +17,11 @@
     div.setAttribute("title", "generated title")
     div.style.backgroundColor = "green"
     div.style.padding = "12px"
-    div.innerText = "Chai aur code" // **
+  /*  div.innerText = "Chai aur code"// **
+    document.body.appendChild(div)  */
     // or 
     const addText = document.createTextNode("Chai aur code")
     div.appendChild(addText)   // ** dono hi same approach h aur optimise kar skte h 
-
     document.body.appendChild(div) // add karne ke liye
 </script>
 </html>
