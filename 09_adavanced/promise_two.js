@@ -1,4 +1,5 @@
-/*let promiseThree = new Promise(function (resolve, reject) {
+/*
+let promiseThree = new Promise(function (resolve, reject) {
 
 
    //Do an async task

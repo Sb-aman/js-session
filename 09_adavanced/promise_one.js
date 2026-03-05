@@ -80,7 +80,7 @@ let promise2 = new Promise(function (resolve, reject) {
     console.log("promise is pending ");
     setTimeout(() => {
         console.log(" i am promice and i am REJECDTED");
-        reject(new Error("i am an error")) // isse capital me hi likhna E ko Error create kar skta hu 
+        reject("i am an error")
 
     }, 9000);                      // --> jab tak promise state pending rhegi tab tak promise result bhi undefined hi dikhayega
 
