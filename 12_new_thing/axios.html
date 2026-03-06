@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1> Get some random cats</h1>
+
+    <button>show new fact</button>
+    <p id="fact"> </p>
+
+    <button id="start">start</button>
+    <button id="stop">stop</button>
+</body>
+
+<script>
+
+
+    //  let url = "https://catfact.ninja/fact"
+    // axios.get(url)
+    // .then(res => console.log(res.data))
+    // .catch(err => console.log(err))
+
+
+    // or by using async await
+
+
+    async function practise() {
+        try {
+            let c = await axios.get(url)
+            //    console.log(c)
+            //    console.log(c.data)
+            //    console.log(c.data.fact)
+            return c.data.fact  //agar return nhi kiya to undefined btayega
+        } catch (error) {
+            console.log("error ", error)
+            return "no record found";
+        }
+
+    }
+
+    // Q. -> whene we click the button then new fact is printed on the screen  .
+
+    let g = document.querySelector('button')
+
+    g.addEventListener('click', async () => {
+        let value = await practise();
+        console.log(value)
+
+        let p = document.querySelector('#fact')
+        p.innerText = value;
+    })
+
+</script>
+
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"> // ja me axios use ke liye 
+    // and for node.js --> npm install axios
+
+</script>
+
+<!-- some excercise like when we press start then fact is started print and when press stop fact stopped -->
+<script>
+    let url = "https://catfact.ninja/fact"
+
+    func = async function practise() {
+        try {
+            let c = await axios.get(url)
+            return c.data.fact  //agar return nhi kiya to undefined btayega
+        } catch (error) {
+            console.log("error ", error)
+            return "no record found";
+        }
+
+    }
+    let c = document.querySelector('#start')
+    c.addEventListener('click', () => {
+        console.log("fact started")
+        newFunc = setInterval(async () => {
+            let e = await func();
+            console.log(e)
+
+        }, 1000);
+    })
+    let d = document.querySelector('#stop')
+    d.addEventListener('click', () => {
+        clearInterval(newFunc);
+        console.log("fact stopped")
+    }) 
+</script>
+
+
+
+
+
+</html>
